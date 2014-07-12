@@ -1,38 +1,10 @@
 module Casting
 	class Role
-		attr_reader :age, :theme
+		attr_reader :theme, :age_range, :gender 
 		
-		def initialize(age, theme)
-			@age = age
-			@theme = theme
+		def initialize(theme, age_range, gender)
+			@theme, @age_range, @gender = theme, age_range, gender
 		end
 				
-		def to_s
-			@theme
-		end
-	end
-	
-	class ManRole < Role
-		Gender = 'male'
-		
-		def initialize(age, theme)
-			super
-		end		
-		
-		def get_gender
-			Gender
-		end
-	end
-	
-	class WomanRole < Role
-		Gender = 'female'
-		
-		def initialize(age, theme)
-			super
-		end
-
-		def get_gender
-			Gender
-		end
-	end
+	end	
 end
