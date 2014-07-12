@@ -5,6 +5,6 @@ module Casting
 		def initialize(theme, age_range, gender)
 			@theme, @age_range, @gender = theme, age_range, gender
 		end
-				
+		
 	end	
 end
