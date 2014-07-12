@@ -17,7 +17,6 @@ module Casting
 	
 	class Actor < Person
 		attr_reader :text, :duration, :role, :actor_role_list
-		attr_accessor :score
 		
 		def initialize(name, age, gender)
 			super
