@@ -14,14 +14,14 @@ super_woman = Casting::Role.new('Lary Kraft', 30..50, 'female')
 
 #------------------- Role and Scenario for Actors ------------------------
 ivan_grozny_speech = "The assumption and active propaganda of the title of Czar, transgressions and sudden changes in policy during the Oprichnina contributed to the image of the Muscovite prince as a ruler accountable only to God."
-avraam.assign_role_and_scenario( ivan_grozny, { theme: "Ivan Grozny", duration: 15, text: ivan_grozny_speech } )
-gosha.assign_role_and_scenario( ivan_grozny, { theme: "Ivan Grozny", duration: 17, text: ivan_grozny_speech } )
+avraam.assign_role_and_scenario( ivan_grozny, { duration: 15, text: ivan_grozny_speech } )
+gosha.assign_role_and_scenario( ivan_grozny, { duration: 17, text: ivan_grozny_speech } )
 
 zorro_speech = "Zorro is an agile athlete and acrobat, using his bullwhip as a gymnastic accoutrement to swing through gaps between city roofs, and is very capable of landing from great heights and taking a fall. Although he is a master swordsman and marksman, he has more than once demonstrated his prowess in unarmed combat against multiple opponents."
-avraam.assign_role_and_scenario( zorro, { theme: "Zorro", duration: 10, text: zorro_speech } )
+avraam.assign_role_and_scenario( zorro, { duration: 10, text: zorro_speech } )
 
 super_woman_speech = "Jolie has attracted notable media attention for her physical appearance particularly her full lips and her many tattoos. She has been named the world's 'most beautiful' or 'sexiest' woman by various media outlets, including Vogue in 2002"
-angelina.assign_role_and_scenario( super_woman, { theme: "Angelina Jolie", duration: 5, text: super_woman_speech } )
+angelina.assign_role_and_scenario( super_woman, { duration: 5, text: super_woman_speech } )
 
 #---------------------------- Juries -------------------------
 oksana = Casting::Jury.new("Oksana Cherkova", 22, 'female')

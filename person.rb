@@ -11,7 +11,7 @@ module Casting
 		end
 		
 		def is_female?
-			!is_male?
+			@gender == 'female'
 		end		
 	end
 	
@@ -24,7 +24,7 @@ module Casting
 		end
 		
 		def young_lady?
-			is_female? && (18..25).include?(@gender)
+			is_female? && (18..25).include?(@age)
 		end
 		
 		def valid_actor_to_play?(role)
@@ -32,7 +32,7 @@ module Casting
 		end
 		
 		def assign_role_and_scenario(role, scenario)
-			raise "You must assign role and scenario for the actor, #{@name}" if role.nil? || scenario.nil?
+			raise "You must assign role and scenario for the actor, #{@name}" if role.nil? || scenario.nil? || scenario.empty?
 			raise "Actor, #{@name}, does not fit the role #{role.theme} by age/gender" unless valid_actor_to_play? role
 			@role, @text, @duration = role, scenario[:text], scenario[:duration]
 			@actor_role_list[@role.theme.intern] = [@text, @duration]
